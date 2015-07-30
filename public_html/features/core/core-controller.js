@@ -3,9 +3,9 @@ var mymodal = angular.module('mymodal',[]);
 
 mymodal.controller('modelController', function ($scope,$modal) {
    
-    $scope.toggleModal = function () {
+    $scope.toggleModal = function (modelName) {
         var modalInstance = $modal.open({
-        templateUrl: 'features/contact/aboutus.html',
+        templateUrl: 'features/contact/'+modelName+'.html',
         scope: $scope,
         backdrop: 'static',
         resolve: {
@@ -29,11 +29,20 @@ mymodal.controller('modelController', function ($scope,$modal) {
     });
 //       
     };
-   
- 
-    
+     
+  
 
+});
 
+$(document).ready(function() {
+  var placeholder = null;
+  $('input[type=text]').focus(function() {
+    placeholder = $(this).attr("placeholder");
+    $(this).attr("placeholder", "");
+  });
+  $('input[type=text]').blur(function() {
+    $(this).attr("placeholder", placeholder);
+  });
 });
 
 

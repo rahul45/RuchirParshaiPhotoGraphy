@@ -152,3 +152,8 @@ div#content {
 
 body.menu-active div#content { left: 284px; border-radius: 7px 0 0 7px; }
 body.menu-active div#content .menu-trigger { left: 294px; }
+.menu_img01{
+    //background-image: url('../../img/core_img/menu.png');
+    height: 79%; 
+    width: 20%;
+  }

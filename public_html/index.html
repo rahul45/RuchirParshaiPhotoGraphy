@@ -50,10 +50,13 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="header_small1">
+<!--        <div class="header_small1">
             Need to add something
-        </div>
-        <div class="header-container header_Big1 animated " ng-include="'features/core/header.html'" ></div>
+        </div>-->
+<div class="header-container header_Big1 animated " ng-include="'features/core/header.html'" >
+   
+</div>
+        
 <!--        <div ng-controller="menuController">
          <ul class="small_header01 list-group">
             
@@ -73,15 +76,11 @@
             </ul>
         </div>-->
         <div class="main-container  container-fluid container_mod1  no_margin no_padding width_100_percent height_100_per">
-            <ng-view></ng-view>
+            <ng-view class="width_100_percent"></ng-view>
+            
         </div> <!-- #main-container -->
-<!--
-             <div class="footer-container">
-                    <footer class="wrapper">
-                        <h3>footer</h3>
-                    </footer>
-                </div>-->
 
+             
 
     </body>
 </html>

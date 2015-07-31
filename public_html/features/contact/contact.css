@@ -4,6 +4,26 @@
     text-align: right;
     background-color: #003399;
 }
+.lebel01_menu{
+    width: 100%;
+    text-align:left;
+    background-color:#F0F0F0;
+}
+.hideMenuSpace{
+    margin-left: 130px; 
+}
+.sidemenu01{
+    width: 40%;
+    background-color: #F0F0F0; 
+    position: absolute;
+    border-radius: 5px;
+    top: 50px;
+    left: 90%;
+    
+}
+#space_hide_menu_text{
+    margin-left: 20px;
+}
 /***************************************************************************************************************/
 .main > div {
   display: inline-block;
